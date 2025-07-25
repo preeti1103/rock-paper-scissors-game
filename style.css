@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #012438;
+    color: #E0F7FF;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* How to Play Modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #01324b;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #1a9ee5;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background: #039BE5;
+}
+
+.title-rps {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.move-pic {
+    height: 100px;
+    transition: transform 0.2s;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.move-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #4FC3F7;
+    height: 130px;
+    width: 130px;
+    border-radius: 65px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.move-button:hover {
+    background-color: rgba(79, 195, 247, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+}
+
+.move-button:active {
+    transform: scale(0.98);
+}
+
+.result-game {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #B2EBF2;
+    min-height: 40px;
+}
+
+.moves-game {
+    font-size: 18px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-game {
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: rgba(0, 150, 199, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.reset-button,
+.auto-play-button,
+.reset-confirmation-button {
+    font-size: 16px;
+    background-color: #1a9ee5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.3s;
+}
+
+.reset-button:hover,
+.auto-play-button:hover,
+.reset-confirmation-button:hover {
+    background-color: #039BE5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reset-confirmation-button {
+    margin-left: 10px;
+}
+
+.js-reset-confirmation {
+    margin: 20px 0;
+    color: #B2EBF2;
+    font-size: 16px;
+}
+
+/* Animation for game results */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.win-animation {
+    animation: pulse 0.5s ease-in-out;
+    color: #76FF03;
+    /* Green for win */
+}
+
+.lose-animation {
+    animation: pulse 0.5s ease-in-out;
+    color: #FF5252;
+    /* Red for lose */
+}
+
+.tie-animation {
+    animation: pulse 0.5s ease-in-out;
+    color: #B2EBF2;
+    /* Blue for tie */
+}

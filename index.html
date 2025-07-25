@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Rock Paper Scissors
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="howToPlay" class="modal">
+        <h3>How to Play</h3>
+        <p>Press R (Rock), P (Paper), S (Scissors), A (Auto Play), Backspace (Reset) or click the buttons!</p>
+        <button id="closeHowToPlay">Got it!</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <p class=" title-rps"> Rock Paper Scissors</p>
+
+        <button class="move-button js-rock-button"><img class="move-pic" src="images/rock-emoji.png"></button>
+
+        <button class="move-button js-paper-button"><img class="move-pic" src="images/paper-emoji.png"></button>
+
+        <button class="move-button js-scissors-button"><img class="move-pic" src="images/scissors-emoji.png"></button>
+
+        <p class="js-result result-game"></p>
+
+        <p class="js-moves moves-game"></p>
+
+        <p class="js-score score-game"></p>
+
+        <div>
+            <button class="reset-button js-reset-button">Reset Score</button>
+            <button class="auto-play-button js-auto-play-button">Auto Play</button>
+        </div>
+
+        <p class="js-reset-confirmation"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</body>
+
+</html>

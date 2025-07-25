@@ -162,3 +162,61 @@ body {
     color: #B2EBF2;
     /* Blue for tie */
 }
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .title-rps {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .move-button {
+        height: 90px;
+        width: 90px;
+        border-radius: 45px;
+        margin: 8px;
+    }
+
+    .move-pic {
+        height: 70px;
+    }
+
+    .score-game {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .result-game {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .moves-game {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reset-button,
+    .auto-play-button {
+        font-size: 14px;
+        padding: 8px 14px;
+        margin: 5px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 20px 10px;
+    }
+
+    .modal h3 {
+        font-size: 20px;
+    }
+
+    .modal p {
+        font-size: 14px;
+    }
+}

@@ -196,6 +196,7 @@ window.onload = function () {
     // Show modal when page loads
     modal.style.display = 'block';
     game.style.display = 'none';
+    closeBtn.focus();
 
     // Close modal when button clicked
     closeBtn.onclick = function () {

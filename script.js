@@ -69,7 +69,7 @@ document.querySelector('.js-reset-button').addEventListener('click', () => {
 
 function showResetConfirmation() {
     document.querySelector('.js-reset-confirmation')
-        .innerHTML = `Are you sure you want to reset the score?
+        .innerHTML = `<div>Are you sure you want to reset the score?</div>
         <button class="js-reset-confirmation-yes reset-confirmation-button">Yes</button>
         <button class="js-reset-confirmation-no reset-confirmation-button">No</button>`;
 
@@ -203,3 +203,11 @@ window.onload = function () {
         game.style.display = 'block';
     };
 };
+// Allow Enter key to close the modal
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+        game.style.display = 'block';
+    }
+});
+

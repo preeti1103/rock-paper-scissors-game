@@ -170,39 +170,41 @@ body {
     }
 
     .title-rps {
-        font-size: 28px;
+        font-size: 25px;
         margin-bottom: 20px;
     }
 
     .move-button {
-        height: 90px;
-        width: 90px;
-        border-radius: 45px;
+        height: 70px;
+        width: 70px;
+        border-radius: 35px;
         margin: 8px;
     }
 
     .move-pic {
-        height: 70px;
+        height: 35px;
+        object-fit: fill;
     }
 
     .score-game {
-        font-size: 16px;
+        font-size: 12px;
         padding: 10px;
     }
 
     .result-game {
-        font-size: 22px;
+        font-size: 18px;
         margin: 20px 0;
     }
 
     .moves-game {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
+        font-size: 12px;
     }
 
     .reset-button,
     .auto-play-button {
-        font-size: 14px;
+        font-size: 12px;
         padding: 8px 14px;
         margin: 5px;
     }
@@ -213,10 +215,25 @@ body {
     }
 
     .modal h3 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .modal p {
+        font-size: 14px;
+    }
+
+    .reset-confirmation-button {
+        font-size: 12px;
+        height: 30px;
+        width: 50px;
+        margin: 0;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    .js-reset-confirmation {
+        margin: 20px 0px;
+        color: #B2EBF2;
         font-size: 14px;
     }
 }

@@ -10,7 +10,7 @@
 - Confetti animation on wins  
 
 **Live Demo**
-(https://preeti1103.github.io/rock-paper-scissors-game/)**  
+(https://preeti1103.github.io/rock-paper-scissors-game/)  
 
 **How to Run Locally**
 ```bash

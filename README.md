@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-<img width="971" height="785" alt="image" src="https://github.com/user-attachments/assets/b95c2154-2bae-4051-9f37-572129b05b27" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/b95c2154-2bae-4051-9f37-572129b05b27" />
 
 **Features**  
 - Keyboard shortcuts (R/P/S)  
@@ -12,7 +12,7 @@
 **Live Demo**
 (https://preeti1103.github.io/rock-paper-scissors-game/)**  
 
-## 🛠️ How to Run Locally  
+**How to Run Locally**
 ```bash
 git clone https://github.com/preeti1103/rock-paper-scissors-game.git
 cd rock-paper-scissors
